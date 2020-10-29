@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>gtt blogs</title>
+  
+  <subtitle>防呆笔记 O(∩_∩)O~~</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://gtt011029.github.io/"/>
+  <updated>2020-10-29T08:12:06.135Z</updated>
+  <id>https://gtt011029.github.io/</id>
+  
+  <author>
+    <name>gtt</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>haha</title>
+    <link href="https://gtt011029.github.io/posts/38563/"/>
+    <id>https://gtt011029.github.io/posts/38563/</id>
+    <published>2020-10-29T08:10:23.000Z</published>
+    <updated>2020-10-29T08:12:06.135Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>nodejs 与 npm 不兼容</title>
+    <link href="https://gtt011029.github.io/posts/52361/"/>
+    <id>https://gtt011029.github.io/posts/52361/</id>
+    <published>2020-01-14T02:54:34.000Z</published>
+    <updated>2020-10-29T07:59:44.002Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用npm install 装包的时候：&lt;/p&gt;
+&lt;p&gt;npm install antd babel-plugin-import –save&lt;/p&gt;
+&lt;p&gt;报这样的错误：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Unhandled rejection RangeError: Maximum call stack size exceededill install loadIdealTree&lt;/code&gt; &lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>函数声明和函数表达式的区别----js</title>
+    <link href="https://gtt011029.github.io/posts/17981/"/>
+    <id>https://gtt011029.github.io/posts/17981/</id>
+    <published>2019-12-15T09:37:13.000Z</published>
+    <updated>2020-10-29T07:59:44.010Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;javaScript定义函数有两种类型：&lt;/p&gt;
+&lt;h4 id=&quot;一、函数声明&quot;&gt;&lt;a href=&quot;#一、函数声明&quot; class=&quot;headerlink&quot; title=&quot;一、函数声明&quot;&gt;&lt;/a&gt;一、函数声明&lt;/h4&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;declaration&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;type&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; type === &lt;span class=&quot;string&quot;&gt;&#39;declaration&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+&lt;h4 id=&quot;二、函数表达式&quot;&gt;&lt;a href=&quot;#二、函数表达式&quot; class=&quot;headerlink&quot; title=&quot;二、函数表达式&quot;&gt;&lt;/a&gt;二、函数表达式&lt;/h4&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; expression = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;type&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; type === &lt;span class=&quot;string&quot;&gt;&#39;expression&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ts合集</title>
+    <link href="https://gtt011029.github.io/posts/58726/"/>
+    <id>https://gtt011029.github.io/posts/58726/</id>
+    <published>2019-12-05T08:44:43.000Z</published>
+    <updated>2020-10-29T07:59:44.006Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;随着应用的庞大，项目中 JavaScript 的代码也会越来越臃肿，这时候许多 JavaScript 的语言弊端就会愈发明显，而 TypeScript 的出现，就是着力于解决 JavaScript 语言天生的弱势：静态类型。 &lt;/p&gt;
+&lt;p&gt;js的超集，主要提供类型系统和对es6的支持。在js上做了一层封装，封装出ts的特性，最终代码可以编译为js。&lt;/p&gt;
+&lt;p&gt;有一定的学习成本：需要理解接口（interfaces）、泛型（Generics）、类（Classes）、枚举类型（Enums）等概念&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MD5 加密</title>
+    <link href="https://gtt011029.github.io/posts/35634/"/>
+    <id>https://gtt011029.github.io/posts/35634/</id>
+    <published>2019-11-02T06:50:20.000Z</published>
+    <updated>2020-10-29T07:59:43.982Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近做东西，遇到加密问题，之前没有用过，就简单的查了点资料&lt;/p&gt;
+&lt;p&gt;为了数据安全经常会去使用到加密技术，这边的加密一般是针对用户名和密码的加密，本地保或传输到服务器时，密码都有可能被获取到，直接操作密码肯定是不安全的，一般是进行MD5加密再保存或传输（这边注意一下，MD5加密是不可逆的，加密后无法解密，想要解密只能用穷举法）&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>对javaScript事件驱动的理解</title>
+    <link href="https://gtt011029.github.io/posts/55049/"/>
+    <id>https://gtt011029.github.io/posts/55049/</id>
+    <published>2019-10-25T06:42:16.000Z</published>
+    <updated>2020-10-29T07:59:44.010Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;之前在学习JavaScript在浏览器的应用时，也知道JavaScript是一个事件驱动语言，但对JavaScript事件驱动机制只是概念上的认识，因此，对异步机制也存在困惑，最近接触到这方面，做以下学习总结&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>进程和线程的区别</title>
+    <link href="https://gtt011029.github.io/posts/44455/"/>
+    <id>https://gtt011029.github.io/posts/44455/</id>
+    <published>2019-10-25T03:22:06.000Z</published>
+    <updated>2020-10-29T07:59:44.010Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;一、什么是进程&quot;&gt;&lt;a href=&quot;#一、什么是进程&quot; class=&quot;headerlink&quot; title=&quot;一、什么是进程&quot;&gt;&lt;/a&gt;一、什么是进程&lt;/h3&gt;&lt;p&gt;进程（process）是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调用的基本单位，是操作系统结构的基础。在当代面向线程设计的计算机结构中，进程是线程的容器。程序是指令、数据及七组织形式的描述，进程是程序的实体。是计算机中的程序关于某数据集合上的一次运动活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。程序是指令、数据及其组织形式的描述，==进程是程序的实体==。&lt;/p&gt;
+&lt;p&gt; ==进程：指在系统中正在运行的一个应用程序；程序一旦运行就是进程；进程——资源分配的最小单位。== &lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>脚本语言和编译语言的区别</title>
+    <link href="https://gtt011029.github.io/posts/3584/"/>
+    <id>https://gtt011029.github.io/posts/3584/</id>
+    <published>2019-10-12T08:59:15.000Z</published>
+    <updated>2020-10-29T07:59:44.010Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;对于JavaScript到底是脚本语言还是编程语言，大家争论不休。有的人说它是一门脚本语言（不需要编译）但是有的人说它是一门编程语言（因为它是图灵完备的）那脚本语言和编程语言的区别到底在哪里呢&lt;/p&gt;
+&lt;p&gt;我查阅了写资料，大致如下：&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>解决端口号被占用的方法</title>
+    <link href="https://gtt011029.github.io/posts/50670/"/>
+    <id>https://gtt011029.github.io/posts/50670/</id>
+    <published>2019-10-03T06:06:20.000Z</published>
+    <updated>2020-10-29T07:59:44.010Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在运行项目的时候被告知5000端口已经被占用了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8F%B7%E8%A2%AB%E5%8D%A0%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95/0.png&quot; alt=&quot;1585893132847&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>react 之 refs</title>
+    <link href="https://gtt011029.github.io/posts/49264/"/>
+    <id>https://gtt011029.github.io/posts/49264/</id>
+    <published>2019-09-22T05:57:18.000Z</published>
+    <updated>2020-10-29T07:59:44.006Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Refs提供了一种访问在render方法中创建的DOM节点或者React元素的方法，在典型的数据流中，props是父子组件交互的唯一方式，如果父组件想要修改子组件，就通过新的props重新渲染他，如果想要子组件更改父组件，就会给子组件暴露一个方法，供子组件使用来更改父组件。&lt;/p&gt;
+&lt;p&gt;但凡事都有例外，某些情况下，需要在典型数据流外，强制修改子代，这个时候就可以使用Refs&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>什么是虚拟DOM</title>
+    <link href="https://gtt011029.github.io/posts/14775/"/>
+    <id>https://gtt011029.github.io/posts/14775/</id>
+    <published>2019-09-20T05:23:43.000Z</published>
+    <updated>2020-10-29T07:59:44.006Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;什么是虚拟DOM，深入了解react虚拟DOM，看了一篇关于虚拟DOM的分析，觉得挺好，简单易懂，现总结如下&lt;/p&gt;
+&lt;h3 id=&quot;一、原始的生成步骤&quot;&gt;&lt;a href=&quot;#一、原始的生成步骤&quot; class=&quot;headerlink&quot; title=&quot;一、原始的生成步骤&quot;&gt;&lt;/a&gt;一、原始的生成步骤&lt;/h3&gt;&lt;p&gt;1、state数据；        2、jsx模板&lt;/p&gt;
+&lt;p&gt;3、数据+模板 结合，生成真实的DOM，替换原来的DOM&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ps：这边有个特别明显的缺点，就是直接拿新的DOM替换旧的DOM非常的消耗性能&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vue全局路由守卫next()--防坑</title>
+    <link href="https://gtt011029.github.io/posts/1089/"/>
+    <id>https://gtt011029.github.io/posts/1089/</id>
+    <published>2019-09-15T06:36:41.000Z</published>
+    <updated>2020-10-29T07:59:44.006Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近入了vue全局守卫的一个坑，现在记录下来&lt;/p&gt;
+&lt;h3 id=&quot;全局守卫：&quot;&gt;&lt;a href=&quot;#全局守卫：&quot; class=&quot;headerlink&quot; title=&quot;全局守卫：&quot;&gt;&lt;/a&gt;全局守卫：&lt;/h3&gt;&lt;p&gt;全局守卫是指实例上直接操作的钩子函数，特点是所有路由配置的组件都会触发&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;beforeEach (to, &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;, nest) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;beforeResolve (to, &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;, next)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;afetrEach (to, &lt;span class=&quot;keyword&quot;&gt;from&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端权限控制</title>
+    <link href="https://gtt011029.github.io/posts/13126/"/>
+    <id>https://gtt011029.github.io/posts/13126/</id>
+    <published>2019-09-08T09:23:16.000Z</published>
+    <updated>2020-10-29T07:59:44.010Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天被问到关于前端权限的事，具体问的是，怎么根据用户权限动态生成路由，一时答不上来，因为我们目前项目关于前端一级菜单权限，是在主页面渲染前。create中得到当前用户的permision，根据其permission判断哪些一级菜单给予展示，哪些一级菜单不予展示。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>react新特性--Hook</title>
+    <link href="https://gtt011029.github.io/posts/47207/"/>
+    <id>https://gtt011029.github.io/posts/47207/</id>
+    <published>2019-09-07T05:53:57.000Z</published>
+    <updated>2020-10-29T07:59:44.006Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Hook是React 16.8的新增特性，它可以让你在不编写class的情况下使用state以及其他的React特性。&lt;/p&gt;
+&lt;h2 id=&quot;Hook解决的问题&quot;&gt;&lt;a href=&quot;#Hook解决的问题&quot; class=&quot;headerlink&quot; title=&quot;Hook解决的问题&quot;&gt;&lt;/a&gt;Hook解决的问题&lt;/h2&gt;&lt;p&gt;1、在组件之间复用状态很难  (这边可以自定义Hook，把复用的部分提出来)&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Object.assign 是浅拷贝还是深拷贝？实现深拷贝的方法有哪些？</title>
+    <link href="https://gtt011029.github.io/posts/59629/"/>
+    <id>https://gtt011029.github.io/posts/59629/</id>
+    <published>2019-05-22T13:27:20.000Z</published>
+    <updated>2020-10-29T07:59:43.982Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Object.assign()方法用于将所有可枚举属性的值从一个或者多个对象复制到目标对象。它将返回目标对象。&lt;/p&gt;
+&lt;p&gt;1、如果目标对象中的属性具有相同的键，则属性将被源对象中的属性覆盖。后面的源对象的属性将类似地覆盖前面的源对象的属性。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>前端如何处理十万级别的大量数据----worker</title>
+    <link href="https://gtt011029.github.io/posts/4544/"/>
+    <id>https://gtt011029.github.io/posts/4544/</id>
+    <published>2019-05-15T12:16:28.000Z</published>
+    <updated>2020-10-29T07:59:44.010Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;​        &lt;/p&gt;
+&lt;h2 id=&quot;一、简介&quot;&gt;&lt;a href=&quot;#一、简介&quot; class=&quot;headerlink&quot; title=&quot;一、简介&quot;&gt;&lt;/a&gt;一、简介&lt;/h2&gt;&lt;p&gt;​        web worker为JavaScript创造多线程环境，允许主线程创建worker线程，将一些任务分配给后者运行。在主线程运行的同时，worker线程在后台运行，两者互不干扰。等到worker线程完成计算任务，再把结果返回给主线程。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Postman 接口测试 请求失败 500</title>
+    <link href="https://gtt011029.github.io/posts/29799/"/>
+    <id>https://gtt011029.github.io/posts/29799/</id>
+    <published>2019-05-10T08:25:55.000Z</published>
+    <updated>2020-10-29T07:59:43.982Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近使用postman测接口的时候老是报500的错误，后找到原因，现总结如下：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/postman/%E9%94%99%E8%AF%AF.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>五大常用算法之----分支限界法</title>
+    <link href="https://gtt011029.github.io/posts/36330/"/>
+    <id>https://gtt011029.github.io/posts/36330/</id>
+    <published>2019-04-07T13:32:31.000Z</published>
+    <updated>2020-10-29T07:59:44.006Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、基本描述&quot;&gt;&lt;a href=&quot;#一、基本描述&quot; class=&quot;headerlink&quot; title=&quot;一、基本描述&quot;&gt;&lt;/a&gt;一、基本描述&lt;/h2&gt;&lt;p&gt;  类似于回溯法，也是一种在问题的解空间树T上搜索问题解的算法。但在一般情况下，分支限界法与回溯法的求解目标不同。&lt;strong&gt;&lt;em&gt;\&lt;/em&gt;回溯法&lt;/strong&gt;的求解目标是找出T中满足约束条件的所有解，而分支限界法的求解目标则是找出&lt;strong&gt;满足约束条件的一个解&lt;/strong&gt;，或是在满足约束条件的解中找出使某一目标函数值达到&lt;strong&gt;极大或极小的解&lt;/strong&gt;，即在某种意义下的最优解。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>五大常用算法之----回溯法</title>
+    <link href="https://gtt011029.github.io/posts/7838/"/>
+    <id>https://gtt011029.github.io/posts/7838/</id>
+    <published>2019-04-05T11:22:01.000Z</published>
+    <updated>2020-10-29T07:59:44.006Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、概念&quot;&gt;&lt;a href=&quot;#一、概念&quot; class=&quot;headerlink&quot; title=&quot;一、概念&quot;&gt;&lt;/a&gt;一、概念&lt;/h2&gt;&lt;p&gt;回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就“回溯”返回，尝试别的路径。&lt;/p&gt;
+&lt;p&gt;回溯法是一种选优搜索法，按选优条件向前搜索，以达到目标。但当探索到某一步时，发现原先选择并不优或达不到目标，就退回一步重新选择，这种走不通就退回再走的技术为回溯法，而满足回溯条件的某个状态的点称为“回溯点”。&lt;/p&gt;
+&lt;p&gt;许多复杂的，规模较大的问题都可以使用回溯法，有“通用解题方法”的美称。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>五大常用算法之----贪心算法</title>
+    <link href="https://gtt011029.github.io/posts/27759/"/>
+    <id>https://gtt011029.github.io/posts/27759/</id>
+    <published>2019-03-29T02:08:41.000Z</published>
+    <updated>2020-10-29T07:59:44.006Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一、基本概念：&quot;&gt;&lt;a href=&quot;#一、基本概念：&quot; class=&quot;headerlink&quot; title=&quot;一、基本概念：&quot;&gt;&lt;/a&gt;一、基本概念：&lt;/h2&gt;&lt;p&gt;   所谓贪心算法是指，在对问题求解时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。&lt;/p&gt;
+&lt;p&gt;   贪心算法没有固定的算法框架，算法设计的关键是贪心策略的选择。必须注意的是，贪心算法不是对所有问题都能得到整体最优解，选择的贪心策略必须具备无后效性，即某个状态以后的过程不会影响以前的状态，只与当前状态有关。&lt;/p&gt;
+&lt;p&gt;  所以对所采用的贪心策略一定要仔细分析其是否满足无后效性。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
