@@ -6,21 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://gtt011029.github.io">
-  <title>对javaScript事件驱动的理解 | gtt blogs</title>
+  <title>js基础之setTimeout与setInterval原理分析 | gtt blogs</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="之前在学习JavaScript在浏览器的应用时，也知道JavaScript是一个事件驱动语言，但对JavaScript事件驱动机制只是概念上的认识，因此，对异步机制也存在困惑，最近接触到这方面，做以下学习总结">
+  <meta name="description" content="setTimeout与setInterval是JavaScript引擎提供的两个定时器方法，分别用于函数的延迟执行和循环调动。setTimeout是通过一个定时器，让函数在定时结束后才开始调用；setInterval是每隔一段时间执行一次函数。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="对javaScript事件驱动的理解">
-<meta property="og:url" content="https:&#x2F;&#x2F;gtt011029.github.io&#x2F;posts&#x2F;55049&#x2F;index.html">
+<meta property="og:title" content="js基础之setTimeout与setInterval原理分析">
+<meta property="og:url" content="https:&#x2F;&#x2F;gtt011029.github.io&#x2F;posts&#x2F;39007&#x2F;index.html">
 <meta property="og:site_name" content="gtt blogs">
-<meta property="og:description" content="之前在学习JavaScript在浏览器的应用时，也知道JavaScript是一个事件驱动语言，但对JavaScript事件驱动机制只是概念上的认识，因此，对异步机制也存在困惑，最近接触到这方面，做以下学习总结">
+<meta property="og:description" content="setTimeout与setInterval是JavaScript引擎提供的两个定时器方法，分别用于函数的延迟执行和循环调动。setTimeout是通过一个定时器，让函数在定时结束后才开始调用；setInterval是每隔一段时间执行一次函数。">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https:&#x2F;&#x2F;gtt011029.github.io&#x2F;%E5%AF%B9javaScript%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E7%9A%84%E7%90%86%E8%A7%A3&#x2F;%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8">
-<meta property="og:updated_time" content="2020-10-30T01:27:34.040Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;gtt011029.github.io&#x2F;js%E5%9F%BA%E7%A1%80%E4%B9%8BsetInterval%E5%92%8CsetTimeout%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90&#x2F;setInterval.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;gtt011029.github.io&#x2F;js%E5%9F%BA%E7%A1%80%E4%B9%8BsetInterval%E5%92%8CsetTimeout%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90&#x2F;setInterval-2.png">
+<meta property="og:updated_time" content="2020-10-30T03:31:07.240Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;gtt011029.github.io&#x2F;%E5%AF%B9javaScript%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E7%9A%84%E7%90%86%E8%A7%A3&#x2F;%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;gtt011029.github.io&#x2F;js%E5%9F%BA%E7%A1%80%E4%B9%8BsetInterval%E5%92%8CsetTimeout%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90&#x2F;setInterval.png">
   
     <link rel="alternative" href="/atom.xml" title="gtt blogs" type="application/atom+xml">
   
@@ -193,14 +194,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-对javaScript事件驱动的理解" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-js基础之setTimeout与setInterval原理分析" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      对javaScript事件驱动的理解
+      js基础之setTimeout与setInterval原理分析
     </h1>
   
 
@@ -212,8 +213,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/posts/55049/" class="archive-article-date">
-        <time datetime="2019-10-25T06:42:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
+<a href="/posts/39007/" class="archive-article-date">
+        <time datetime="2019-10-26T02:01:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-26</time>
 </a>
 
   
@@ -226,7 +227,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">1.5k字</span>
+      <span class="post-count">1.8k字</span>
     </span>
   </span>
 
@@ -235,7 +236,7 @@
     <span class="post-meta-item-icon">
       <i class="icon-book icon"></i>
       <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">5分</span>
+      <span class="post-count">6分</span>
     </span>
   </span>
 </div>
@@ -246,29 +247,52 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p>之前在学习JavaScript在浏览器的应用时，也知道JavaScript是一个事件驱动语言，但对JavaScript事件驱动机制只是概念上的认识，因此，对异步机制也存在困惑，最近接触到这方面，做以下学习总结</p>
+    <p>setTimeout与setInterval是JavaScript引擎提供的两个定时器方法，分别用于函数的延迟执行和循环调动。setTimeout是通过一个定时器，让函数在定时结束后才开始调用；setInterval是每隔一段时间执行一次函数。</p>
 <a id="more"></a>
 
-<h3 id="一、javascript-在浏览器端的事件驱动机制"><a href="#一、javascript-在浏览器端的事件驱动机制" class="headerlink" title="一、javascript 在浏览器端的事件驱动机制"></a>一、javascript 在浏览器端的事件驱动机制</h3><p>首先，javascript 在浏览器端运行是单线程的，这是由浏览器决定的，这是为了避免多线程执行不同任务会发生冲突的情况。也就是说我们写的javascript 代码只在一个线程上运行，称之为主线程（HTML5提供了web worker API可以让浏览器开一个线程运行比较复杂耗时的 javascript任务，但是这个线程仍受主线程的控制）。单线程的话，如果我们做一些“sleep”的操作比如说：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var now = + new Date()</span><br><span class="line">while (+new Date() &lt;= now + 1000)&#123;</span><br><span class="line">//这是一个耗时的操所</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>那么在这将近一秒内，线程就会被阻塞，无法继续执行下面的任务。</p>
-<p>还有些操作比如说获取远程数据、I/O操作等，他们都很耗时，如果采用同步的方式，那么进程在执行这些操作时就会因为耗时而等待，就像上面那样，下面的任务也只能等待，这样效率并不高。 为了解决单线程带来的阻塞问题很多操作系统实现了异步编程机制，<strong>浏览器</strong>中也是这么做的，主要表现如下：</p>
-<p>1、只在主线程中运行JavaScript代码</p>
-<p>2、主线程一启动就进入事件循环，整个过程就是不断循环，不断执行回调函数的过程</p>
-<p>3、遇到网络请求、I/O操作等，浏览器就会单独开一个工作线程来处理这些比较耗时的操作，并且会设置相应的观察者，然后就回到主线程，继续执行下面的代码</p>
-<p>4、浏览器单开的线程处理好任务时，或者有监听的事件后会用得到的数据形成一个事件，放在相应的观察者事件队列中，事件队列是在主线程中的</p>
-<p>5、主线程不断地循环，不断的检查事件队列，通过遍历事件依次执行其回调函数（事件循环是在主线程中执行栈里的代码执行完毕之后才开始执行的）</p>
-<p> <img src="/%E5%AF%B9javaScript%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8%E7%9A%84%E7%90%86%E8%A7%A3/%E4%BA%8B%E4%BB%B6%E9%A9%B1%E5%8A%A8" alt="img"> </p>
-<p>从图中可以看出，其发送了一个ajax请求，浏览器单开一个线程用于执行它，然后继续回到主线程去执行其他的命令，当ajax执行完后就会把信息放在事件队列中，主线程检查其事件队列，然后执行其对应的回调函数</p>
-<h3 id="二、观察者机制（watcher）"><a href="#二、观察者机制（watcher）" class="headerlink" title="二、观察者机制（watcher）"></a>二、观察者机制（watcher）</h3><p>watcher，观察者，是事件驱动系统的重要的机制</p>
-<p><code>setTimeout</code>称为定时器，这是浏览器给的API。每当你使用定时器，这个函数将会设置一个<code>watcher</code>，观察者。主线程会不断的循环，不断的”经过”这里检查时间，当主线程检查时间间隔符合要求时，就会产生一个定时器事件，加入到这个<code>watcher</code>事件队列中并执行回调函数。因此执行<code>setTimeout</code>只是在时间到的时候产生了要调用回调函数的消息加入到了事件队列中，因此，回调函数并不一定在指定的时间时调用，它取决于前面有多少等待处理的事件。</p>
-<p>刚才讲的是定时器观察者，还有I/O观察者、网络请求观察者、鼠标事件观察者、键盘事件观察者等等等等，我们经常遇到事件监听函数会让你绑定一个回调函数，这种监听函数一般就会设置<code>watcher</code>，其他线程产生的事件也会放到相应<code>watcher</code>的事件队列中，因此每个<code>watcher</code>会<strong>产生自己的事件队列</strong>。<strong>主线程在循环的时候，实际上是在依次调用这些<code>watcher</code>，检查每个<code>watcher</code>的事件队列，有事件就执行相应的回调。</strong></p>
-<h3 id="三、javaScript在node-js上的事件驱动机制"><a href="#三、javaScript在node-js上的事件驱动机制" class="headerlink" title="三、javaScript在node.js上的事件驱动机制"></a>三、javaScript在node.js上的事件驱动机制</h3><p> javascript 在 node.js上的事件驱动机制与浏览器端大致相同，都是单线程，都有event loop，上面讲的javascript在浏览器端的事件循环机制在node上也是大致一样的，不同的是执行者和执行者的行为不一样，因为他们关注的任务不一样： </p>
-<p>1、node端异步机制和事件循环更加纯粹一些。node为了支持高并发，所有的API几乎都是异步的，这样会充分利用操作系统的其他线程来帮忙完成任务，主线程只负责事件消费。例如当web server接收到请求，node就把它关闭，交给其他线程进行处理，然后去服务下一个web请求。当这个请求完成，它被放到处理队列，当到达队列开头，这个结果被返回给用户。这样的话webserver一直接受请求而不等待任何读写操作，这种非阻塞型I/O性能很强。</p>
-<p>2、 浏览器端是浏览器负责执行BOM API，管理线程，处理用户输入信息等，在node上是node的一个核心库libuv负责执行node API，管理主线程（运行javascript）和工作线程等。 </p>
-<p>3、 因为前端和后端关注的内容不同，因此两个运行环境的API也专注于不同的任务 </p>
-<p>作者：莫凡_Tcg链接：<a href="https://juejin.im/post/59e21e8551882578db27c364来源：掘金著作权归作者所有。" target="_blank" rel="noopener">https://juejin.im/post/59e21e8551882578db27c364来源：掘金著作权归作者所有。</a></p>
+
+<h2 id="知识铺垫"><a href="#知识铺垫" class="headerlink" title="知识铺垫"></a>知识铺垫</h2><p>这些知识点可以看我这篇博客：<a href="https://gtt011029.github.io/posts/55049/">https://gtt011029.github.io/posts/55049/</a>   （对javaScript事件驱动的理解）</p>
+<h3 id="单线程模型"><a href="#单线程模型" class="headerlink" title="单线程模型"></a>单线程模型</h3><p>由于js被设计用在浏览器环境，而该环境下存在大量可能发生冲突的DOM操作，为了避免进行复杂的冲突处理，javaScript设计者舍弃了Java的多线程模型，将其设计成一门单线程语言。</p>
+<p>ps：这里的单线程是指javaScript的主线程只有一个。除了主线程还有I/O线程（子线程），通过事件循环来处理I/O问题，其受主线程的控制。</p>
+<h3 id="任务队列"><a href="#任务队列" class="headerlink" title="任务队列"></a>任务队列</h3><p>所谓任务队列，就是用于存储等待执行的任务的队列。由于javaScript是一门单线程语言，如果当前有一个任务需要执行，但javaScript引擎正在执行其他的任务，那么这个任务就会被放在任务队列中，当javaScript引擎处理完手中的事，再去查看任务队列中是否有待执行的任务，如果有的话就去执行。</p>
+<h3 id="setTimeout与setInterval"><a href="#setTimeout与setInterval" class="headerlink" title="setTimeout与setInterval"></a>setTimeout与setInterval</h3><p>setTimeout(func, delay, args)：设置超时调用，js引擎会为func设置一个定时器，delay毫秒后，将func添加到任务队列等待执行。</p>
+<p>SetInterval(func, interval, args)：设置循环调用，js引擎每隔interval毫秒，就会把func添加到队列中一次。</p>
+<p>相同点：</p>
+<p>1、都会加入到队列中，等待线程空闲时执行</p>
+<p>2、两者都无法保证何时执行回调（因为不知道线程什么时候空闲）</p>
+<p>不同点：</p>
+<p>1、setTimeout只会往队列中添加一次，而setInterval会每隔一段时间往队列中添加一次</p>
+<p>2、setTimeout可以保证函数在指定时间间隔不会执行，而setInterval无法保证</p>
+<h3 id="运行机制"><a href="#运行机制" class="headerlink" title="运行机制"></a>运行机制</h3><p>setTimeout：</p>
+<p>​        在执行该语句时设置一个定时器，定时器的时间为设置的延时时间，计时结束后，将传入的函数添加到任务队列中。</p>
+<p>​        setTimeout函数本身会返回一个句柄，我们可以在函数执行之前通过clearTimeout取消该定时器。</p>
+<p>setInterval：</p>
+<p>​        本质上就是每隔一段时间把回调函数放进任务队列中，但是其有一个原则，就是如果队列中存在之前由其添加的回调函数，就会放弃本次的添加（不会影响之后的计时），当然也可以通过clearInterval移除定时器。</p>
+<p>​        由于setInterval只负责向队列中添加函数，而不考虑函数的执行，就会出现下面的情况：</p>
+<p>​        假设线程执行完setInterval(func, 100, args)后处于完全空闲状态（即只要向任务队列添加函数就会立即执行）。而func是一个相对复杂的函数，执行该函数需要90毫秒。那么函数的执行过程就会变成下图所示：    </p>
+<p>​    </p>
+<p><img src="/js%E5%9F%BA%E7%A1%80%E4%B9%8BsetInterval%E5%92%8CsetTimeout%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90/setInterval.png" alt=""></p>
+<p>从图中可以看到，从上次函数执行完毕，到下次开始执行，之间只间隔了10毫秒，而不是我们所希望的每隔100毫秒执行一次（因为setInterval只关注任务添加，不关注任务执行）。</p>
+<p>由于上述机制，在很多情况下，setInterval都会遇到一些性能问题。就拿上面的例子来说，我们的本意可能是每隔100毫秒执行一次函数，结果只等待了10毫秒就又执行了一次。另外，对于复杂的实际情况，setInterval经常出现两次的执行间隔相差甚远的情况，对于用户能感知到的操作，这会带来很不好的用户体验。因此在实际编码中，开发者通常会使用setTimeout来模拟实现setInterval效果（下面会有举例）。</p>
+<p>而如果线程一开始是繁忙的，直到150毫秒处才进入空闲状态（假设func执行时长为10毫秒），那么实际的运行将变成下图所示：<br><img src="/js%E5%9F%BA%E7%A1%80%E4%B9%8BsetInterval%E5%92%8CsetTimeout%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90/setInterval-2.png" alt="在这里插入图片描述"><br>这里在100毫秒处向队列添加func时，由于线程繁忙，上次添加的func还在队列中等待，因此直接丢弃本次要添加的函数，但在200毫秒时仍然重新向队列中添加func。</p>
+<h2 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h2><h4 id="setTimeout"><a href="#setTimeout" class="headerlink" title="setTimeout"></a>setTimeout</h4><p>主要用于需要进行延时滴啊用的场景中，例如“节流”、“防抖”，此外由于setInterval的性能问题，通过我们会用setTimeout模拟setInterval</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">simulateInterval</span>(<span class="params">callback, interval</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> timerId = <span class="literal">null</span>;</span><br><span class="line">  <span class="keyword">const</span> fn = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">    callback();</span><br><span class="line">    <span class="keyword">const</span> prevTimerId = timerId;</span><br><span class="line">    timerId = setInterval(fn, interval);</span><br><span class="line">    clearTimeout(prevTimerId);</span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="keyword">return</span> setTimeout(fn, interval);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">simulateInterval(<span class="function"><span class="params">()</span> =&gt;</span> &#123;<span class="built_in">console</span>.log(<span class="string">'test'</span>)&#125;, <span class="number">1000</span>)</span><br></pre></td></tr></table></figure>
+
+<p>利用setTimeout保证在指定时间内不会执行的特点，我们可以在执行完上次的回调函数后，重置定时器，实现循环执行func的效果，并且从上次执行完毕到下次执行开始，至少会经过100毫秒。这在实际的编码中通常会带来较大的性能提升，同时函数的执行间隔也会相对稳定。</p>
+<h4 id="setInterval"><a href="#setInterval" class="headerlink" title="setInterval"></a>setInterval</h4><p>尽管存在上述性能问题，setInterval的使用场景相对较少，但当所使用的接口来自外部（即回调函数本身无法修改）时，就必须通过setInterval来实现循环执行了。此外，对于动画效果来说，我们通常会希望动画运行的更加平滑（也就是希望函数运行得更频繁），这时使用setInterval往往更加流畅，</p>
+<p>除了这类情况，开发者一般不会使用setInterval方法进行循环调用。</p>
+<h2 id="补充说明"><a href="#补充说明" class="headerlink" title="补充说明"></a>补充说明</h2><p>setTimeout与setInterval的第一个参数可以是一个匿名函数，也可以是一个函数名，或者是一个字符串，如下面的写法都是合法的：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params">msg</span>)</span>&#123;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//传入回调函数名</span></span><br><span class="line">setTimeout(func, <span class="number">100</span>, <span class="string">"夕山雨"</span>);</span><br><span class="line"><span class="comment">//传入匿名函数</span></span><br><span class="line">setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params">name</span>)</span>&#123;</span><br><span class="line">  ...</span><br><span class="line">&#125;, <span class="number">100</span>, <span class="string">"夕山雨"</span>);</span><br><span class="line"><span class="comment">//传入字符串，js引擎会将其解析为函数体</span></span><br><span class="line">setTimeout(<span class="string">"alert('夕山雨')"</span>, <span class="number">100</span>);</span><br><span class="line"></span><br><span class="line"><span class="number">123456789101112</span></span><br></pre></td></tr></table></figure>
+
+<p>但是传入如下的格式就可能报错：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(func(<span class="string">"夕山雨"</span>), <span class="number">100</span>);</span><br><span class="line"><span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<p>因为这种写法实际上是先调用func函数，然后再将返回值添加到任务队列。如果func的返回值不是函数（或可执行的字符串），那么程序就会报错；如果返回值是函数，则会将返回的函数添加到任务队列。该情况可以写成下面的形式：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//将其作为字符串传入，就可以被正确解析</span></span><br><span class="line">setTimeout(<span class="string">"func('夕山雨')"</span>, <span class="number">100</span>)；</span><br><span class="line"><span class="number">12</span></span><br></pre></td></tr></table></figure>
+
+<p>此外，当给setTimeout传入的延迟时间为0时，<strong>并不代表回调函数会立即执行。实际上浏览器规定的有一个默认的最短计时时间，对于现代浏览器，这个时间一般为4毫秒（老版本的浏览器则会更长一些）</strong>。也就是说，即使传入的延迟时间为0，浏览器也会至少在4毫秒后才会执行。</p>
+<p>上述补充说明同样适用于setInterval。</p>
 
     
 
@@ -283,7 +307,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://gtt011029.github.io/posts/55049/" title="对javaScript事件驱动的理解" target="_blank">https://gtt011029.github.io/posts/55049/</a>
+          <a href="https://gtt011029.github.io/posts/39007/" title="js基础之setTimeout与setInterval原理分析" target="_blank">https://gtt011029.github.io/posts/39007/</a>
         </li>
         
       </ul>
@@ -344,7 +368,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://gtt011029.github.io/posts/55049/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://gtt011029.github.io/posts/39007/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -359,18 +383,18 @@
 
 <nav id="article-nav">
   
-    <a href="/posts/39007/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/35634/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          js基础之setTimeout与setInterval原理分析
+          MD5 加密
         
       </div>
     </a>
   
   
-    <a href="/posts/44455/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">进程和线程的区别</div>
+    <a href="/posts/55049/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">对javaScript事件驱动的理解</div>
       <i class="icon-circle-right"></i>
     </a>
   

@@ -96,11 +96,28 @@
   </entry>
   
   <entry>
+    <title>js基础之setTimeout与setInterval原理分析</title>
+    <link href="https://gtt011029.github.io/posts/39007/"/>
+    <id>https://gtt011029.github.io/posts/39007/</id>
+    <published>2019-10-26T02:01:29.000Z</published>
+    <updated>2020-10-30T03:31:07.240Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;setTimeout与setInterval是JavaScript引擎提供的两个定时器方法，分别用于函数的延迟执行和循环调动。setTimeout是通过一个定时器，让函数在定时结束后才开始调用；setInterval是每隔一段时间执行一次函数。&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>对javaScript事件驱动的理解</title>
     <link href="https://gtt011029.github.io/posts/55049/"/>
     <id>https://gtt011029.github.io/posts/55049/</id>
     <published>2019-10-25T06:42:16.000Z</published>
-    <updated>2020-10-29T07:59:44.010Z</updated>
+    <updated>2020-10-30T01:27:34.040Z</updated>
     
     <summary type="html">
     
@@ -360,23 +377,6 @@
       &lt;h2 id=&quot;一、基本概念：&quot;&gt;&lt;a href=&quot;#一、基本概念：&quot; class=&quot;headerlink&quot; title=&quot;一、基本概念：&quot;&gt;&lt;/a&gt;一、基本概念：&lt;/h2&gt;&lt;p&gt;   所谓贪心算法是指，在对问题求解时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。&lt;/p&gt;
 &lt;p&gt;   贪心算法没有固定的算法框架，算法设计的关键是贪心策略的选择。必须注意的是，贪心算法不是对所有问题都能得到整体最优解，选择的贪心策略必须具备无后效性，即某个状态以后的过程不会影响以前的状态，只与当前状态有关。&lt;/p&gt;
 &lt;p&gt;  所以对所采用的贪心策略一定要仔细分析其是否满足无后效性。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>五大常用算法之----动态规划算法</title>
-    <link href="https://gtt011029.github.io/posts/57068/"/>
-    <id>https://gtt011029.github.io/posts/57068/</id>
-    <published>2019-03-28T10:53:58.000Z</published>
-    <updated>2020-10-29T07:59:44.006Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、基本概念&quot;&gt;&lt;a href=&quot;#一、基本概念&quot; class=&quot;headerlink&quot; title=&quot;一、基本概念&quot;&gt;&lt;/a&gt;一、基本概念&lt;/h2&gt;&lt;p&gt;   动态规划过程是：每次决策依赖于当前状态，又随即引起状态的转移。一个决策序列就是在变化的状态中产生出来的，所以，这种多阶段最优化决策解决问题的过程就称为动态规划。&lt;/p&gt;
     
     </summary>
     
