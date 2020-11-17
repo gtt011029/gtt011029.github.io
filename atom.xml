@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gtt011029.github.io/"/>
-  <updated>2020-10-29T07:59:44.002Z</updated>
+  <updated>2020-11-07T01:14:54.365Z</updated>
   <id>https://gtt011029.github.io/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>angular国际化i18n--如何从容器元件翻译角度插值字符串</title>
+    <link href="https://gtt011029.github.io/posts/16574/"/>
+    <id>https://gtt011029.github.io/posts/16574/</id>
+    <published>2020-10-30T03:39:13.000Z</published>
+    <updated>2020-11-07T01:14:54.365Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>nodejs 与 npm 不兼容</title>
@@ -78,6 +93,30 @@
   </entry>
   
   <entry>
+    <title>Object.freeze&amp;&amp;Object.seal用法解析</title>
+    <link href="https://gtt011029.github.io/posts/38723/"/>
+    <id>https://gtt011029.github.io/posts/38723/</id>
+    <published>2019-11-17T08:13:24.000Z</published>
+    <updated>2020-11-17T08:49:57.316Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、对象冻结&quot;&gt;&lt;a href=&quot;#一、对象冻结&quot; class=&quot;headerlink&quot; title=&quot;一、对象冻结&quot;&gt;&lt;/a&gt;一、对象冻结&lt;/h2&gt;&lt;p&gt;Object.freeze()&lt;/p&gt;
+&lt;figure class=&quot;highlight
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>MD5 加密</title>
     <link href="https://gtt011029.github.io/posts/35634/"/>
     <id>https://gtt011029.github.io/posts/35634/</id>
@@ -100,7 +139,7 @@
     <link href="https://gtt011029.github.io/posts/39007/"/>
     <id>https://gtt011029.github.io/posts/39007/</id>
     <published>2019-10-26T02:01:29.000Z</published>
-    <updated>2020-10-30T03:31:07.240Z</updated>
+    <updated>2020-10-30T03:31:26.261Z</updated>
     
     <summary type="html">
     
@@ -339,44 +378,6 @@
     <summary type="html">
     
       &lt;h2 id=&quot;一、基本描述&quot;&gt;&lt;a href=&quot;#一、基本描述&quot; class=&quot;headerlink&quot; title=&quot;一、基本描述&quot;&gt;&lt;/a&gt;一、基本描述&lt;/h2&gt;&lt;p&gt;  类似于回溯法，也是一种在问题的解空间树T上搜索问题解的算法。但在一般情况下，分支限界法与回溯法的求解目标不同。&lt;strong&gt;&lt;em&gt;\&lt;/em&gt;回溯法&lt;/strong&gt;的求解目标是找出T中满足约束条件的所有解，而分支限界法的求解目标则是找出&lt;strong&gt;满足约束条件的一个解&lt;/strong&gt;，或是在满足约束条件的解中找出使某一目标函数值达到&lt;strong&gt;极大或极小的解&lt;/strong&gt;，即在某种意义下的最优解。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>五大常用算法之----回溯法</title>
-    <link href="https://gtt011029.github.io/posts/7838/"/>
-    <id>https://gtt011029.github.io/posts/7838/</id>
-    <published>2019-04-05T11:22:01.000Z</published>
-    <updated>2020-10-29T07:59:44.006Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、概念&quot;&gt;&lt;a href=&quot;#一、概念&quot; class=&quot;headerlink&quot; title=&quot;一、概念&quot;&gt;&lt;/a&gt;一、概念&lt;/h2&gt;&lt;p&gt;回溯算法实际上一个类似枚举的搜索尝试过程，主要是在搜索尝试过程中寻找问题的解，当发现已不满足求解条件时，就“回溯”返回，尝试别的路径。&lt;/p&gt;
-&lt;p&gt;回溯法是一种选优搜索法，按选优条件向前搜索，以达到目标。但当探索到某一步时，发现原先选择并不优或达不到目标，就退回一步重新选择，这种走不通就退回再走的技术为回溯法，而满足回溯条件的某个状态的点称为“回溯点”。&lt;/p&gt;
-&lt;p&gt;许多复杂的，规模较大的问题都可以使用回溯法，有“通用解题方法”的美称。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>五大常用算法之----贪心算法</title>
-    <link href="https://gtt011029.github.io/posts/27759/"/>
-    <id>https://gtt011029.github.io/posts/27759/</id>
-    <published>2019-03-29T02:08:41.000Z</published>
-    <updated>2020-10-29T07:59:44.006Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;一、基本概念：&quot;&gt;&lt;a href=&quot;#一、基本概念：&quot; class=&quot;headerlink&quot; title=&quot;一、基本概念：&quot;&gt;&lt;/a&gt;一、基本概念：&lt;/h2&gt;&lt;p&gt;   所谓贪心算法是指，在对问题求解时，总是做出在当前看来是最好的选择。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。&lt;/p&gt;
-&lt;p&gt;   贪心算法没有固定的算法框架，算法设计的关键是贪心策略的选择。必须注意的是，贪心算法不是对所有问题都能得到整体最优解，选择的贪心策略必须具备无后效性，即某个状态以后的过程不会影响以前的状态，只与当前状态有关。&lt;/p&gt;
-&lt;p&gt;  所以对所采用的贪心策略一定要仔细分析其是否满足无后效性。&lt;/p&gt;
     
     </summary>
     

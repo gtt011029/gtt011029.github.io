@@ -6,19 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://gtt011029.github.io">
-  <title>gtt blogs</title>
+  <title>Object.freeze&amp;&amp;Object.seal用法解析 | gtt blogs</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
-<meta property="og:title" content="gtt blogs">
-<meta property="og:url" content="https:&#x2F;&#x2F;gtt011029.github.io&#x2F;index.html">
+  <meta name="description" content="一、对象冻结Object.freeze() 12345678910111213141516171819202122let objectToFreeze = &amp;#123;  age: 18,  name: &amp;apos;tt&amp;apos;,  like: [&amp;apos;apple&amp;apos;, &amp;apos;banana&amp;apos;, &amp;apos;orange&amp;apos;],  sibling: &amp;#123;    age: 25,    name: &amp;apos;tina&amp;apos;  &amp;#125;&amp;#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Object.freeze&amp;&amp;Object.seal用法解析">
+<meta property="og:url" content="https:&#x2F;&#x2F;gtt011029.github.io&#x2F;posts&#x2F;38723&#x2F;index.html">
 <meta property="og:site_name" content="gtt blogs">
+<meta property="og:description" content="一、对象冻结Object.freeze() 12345678910111213141516171819202122let objectToFreeze = &amp;#123;  age: 18,  name: &amp;apos;tt&amp;apos;,  like: [&amp;apos;apple&amp;apos;, &amp;apos;banana&amp;apos;, &amp;apos;orange&amp;apos;],  sibling: &amp;#123;    age: 25,    name: &amp;apos;tina&amp;apos;  &amp;#125;&amp;#">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-11-17T08:49:57.316Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="gtt blogs" type="application/atom+xml">
@@ -192,340 +191,25 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-angular国际化i18n-如何从容器元件翻译角度插值字符串" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Object-freeze-Object-seal用法解析" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/posts/16574/" target="_blank">angular国际化i18n--如何从容器元件翻译角度插值字符串</a>
-  
+    <h1 class="article-title" itemprop="name">
+      Object.freeze&amp;&amp;Object.seal用法解析
     </h1>
   
 
 
   
   
-<a href="/posts/16574/" class="archive-article-date">
-        <time datetime="2020-10-30T03:39:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-30</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/posts/16574/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
         
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
 
-
-
-
-  
-    <article id="post-nodejs-与-npm-不兼容" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/posts/52361/" target="_blank">nodejs 与 npm 不兼容</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/posts/52361/" class="archive-article-date">
-        <time datetime="2020-01-14T02:54:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-14</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>使用npm install 装包的时候：</p>
-<p>npm install antd babel-plugin-import –save</p>
-<p>报这样的错误：</p>
-<p><code>Unhandled rejection RangeError: Maximum call stack size exceededill install loadIdealTree</code> </p>
-    
-    <a class="article-more-a" href="/posts/52361/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/posts/52361/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-函数声明和函数表达式的区别-js" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/posts/17981/" target="_blank">函数声明和函数表达式的区别----js</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/posts/17981/" class="archive-article-date">
-        <time datetime="2019-12-15T09:37:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-15</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>javaScript定义函数有两种类型：</p>
-<h4 id="一、函数声明"><a href="#一、函数声明" class="headerlink" title="一、函数声明"></a>一、函数声明</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">declaration</span> (<span class="params">type</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> type === <span class="string">'declaration'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="二、函数表达式"><a href="#二、函数表达式" class="headerlink" title="二、函数表达式"></a>二、函数表达式</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> expression = <span class="function"><span class="keyword">function</span> (<span class="params">type</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> type === <span class="string">'expression'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-    
-    <a class="article-more-a" href="/posts/17981/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/posts/17981/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-ts" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/posts/58726/" target="_blank">ts合集</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/posts/58726/" class="archive-article-date">
-        <time datetime="2019-12-05T08:44:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-05</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>随着应用的庞大，项目中 JavaScript 的代码也会越来越臃肿，这时候许多 JavaScript 的语言弊端就会愈发明显，而 TypeScript 的出现，就是着力于解决 JavaScript 语言天生的弱势：静态类型。 </p>
-<p>js的超集，主要提供类型系统和对es6的支持。在js上做了一层封装，封装出ts的特性，最终代码可以编译为js。</p>
-<p>有一定的学习成本：需要理解接口（interfaces）、泛型（Generics）、类（Classes）、枚举类型（Enums）等概念</p>
-    
-    <a class="article-more-a" href="/posts/58726/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/posts/58726/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Object-freeze-Object-seal用法解析" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/posts/38723/" target="_blank">Object.freeze&amp;&amp;Object.seal用法解析</a>
-  
-    </h1>
-  
-
-
-  
-  
 <a href="/posts/38723/" class="archive-article-date">
         <time datetime="2019-11-17T08:13:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-17</time>
 </a>
@@ -533,6 +217,27 @@
   
   
     
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">467字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">2分</span>
+    </span>
+  </span>
+</div>
+
 
   
   </header>
@@ -577,6 +282,20 @@
     
 
     
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          gtt
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://gtt011029.github.io/posts/38723/" title="Object.freeze&amp;&amp;Object.seal用法解析" target="_blank">https://gtt011029.github.io/posts/38723/</a>
+        </li>
+        
+      </ul>
+    </div>
+    
 
   </div>
   <div class="article-info article-info-index">
@@ -585,16 +304,85 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/posts/38723/">展开全文 >></a>
-    </p>
+
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://gtt011029.github.io/posts/38723/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+    <a href="/posts/58726/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          ts合集
+        
+      </div>
+    </a>
+  
+  
+    <a href="/posts/35634/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">MD5 加密</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -615,400 +403,14 @@
 
 
 
-  
-    <article id="post-MD5-加密" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/posts/35634/" target="_blank">MD5 加密</a>
-  
-    </h1>
-  
 
 
-  
-  
-<a href="/posts/35634/" class="archive-article-date">
-        <time datetime="2019-11-02T06:50:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-02</time>
-</a>
 
-  
-  
-    
 
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>最近做东西，遇到加密问题，之前没有用过，就简单的查了点资料</p>
-<p>为了数据安全经常会去使用到加密技术，这边的加密一般是针对用户名和密码的加密，本地保或传输到服务器时，密码都有可能被获取到，直接操作密码肯定是不安全的，一般是进行MD5加密再保存或传输（这边注意一下，MD5加密是不可逆的，加密后无法解密，想要解密只能用穷举法）</p>
-    
-    <a class="article-more-a" href="/posts/35634/#more">more >></a>
-    
-    
 
-    
 
-    
 
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
 
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/posts/35634/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-js基础之setTimeout与setInterval原理分析" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/posts/39007/" target="_blank">js基础之setTimeout与setInterval原理分析</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/posts/39007/" class="archive-article-date">
-        <time datetime="2019-10-26T02:01:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-26</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>setTimeout与setInterval是JavaScript引擎提供的两个定时器方法，分别用于函数的延迟执行和循环调动。setTimeout是通过一个定时器，让函数在定时结束后才开始调用；setInterval是每隔一段时间执行一次函数。</p>
-    
-    <a class="article-more-a" href="/posts/39007/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/posts/39007/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-对javaScript事件驱动的理解" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/posts/55049/" target="_blank">对javaScript事件驱动的理解</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/posts/55049/" class="archive-article-date">
-        <time datetime="2019-10-25T06:42:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>之前在学习JavaScript在浏览器的应用时，也知道JavaScript是一个事件驱动语言，但对JavaScript事件驱动机制只是概念上的认识，因此，对异步机制也存在困惑，最近接触到这方面，做以下学习总结</p>
-    
-    <a class="article-more-a" href="/posts/55049/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/posts/55049/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-进程和线程的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/posts/44455/" target="_blank">进程和线程的区别</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/posts/44455/" class="archive-article-date">
-        <time datetime="2019-10-25T03:22:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-25</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h3 id="一、什么是进程"><a href="#一、什么是进程" class="headerlink" title="一、什么是进程"></a>一、什么是进程</h3><p>进程（process）是计算机中的程序关于某数据集合上的一次运行活动，是系统进行资源分配和调用的基本单位，是操作系统结构的基础。在当代面向线程设计的计算机结构中，进程是线程的容器。程序是指令、数据及七组织形式的描述，进程是程序的实体。是计算机中的程序关于某数据集合上的一次运动活动，是系统进行资源分配和调度的基本单位，是操作系统结构的基础。程序是指令、数据及其组织形式的描述，==进程是程序的实体==。</p>
-<p> ==进程：指在系统中正在运行的一个应用程序；程序一旦运行就是进程；进程——资源分配的最小单位。== </p>
-    
-    <a class="article-more-a" href="/posts/44455/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/posts/44455/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-脚本语言和编译语言的区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/posts/3584/" target="_blank">脚本语言和编译语言的区别</a>
-  
-    </h1>
-  
-
-
-  
-  
-<a href="/posts/3584/" class="archive-article-date">
-        <time datetime="2019-10-12T08:59:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-12</time>
-</a>
-
-  
-  
-    
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>对于JavaScript到底是脚本语言还是编程语言，大家争论不休。有的人说它是一门脚本语言（不需要编译）但是有的人说它是一门编程语言（因为它是图灵完备的）那脚本语言和编程语言的区别到底在哪里呢</p>
-<p>我查阅了写资料，大致如下：</p>
-    
-    <a class="article-more-a" href="/posts/3584/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/posts/3584/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -1018,8 +420,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
