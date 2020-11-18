@@ -17,7 +17,7 @@
 <meta property="og:site_name" content="gtt blogs">
 <meta property="og:description" content="一、对象冻结Object.freeze() 12345678910111213141516171819202122let objectToFreeze = &amp;#123;  age: 18,  name: &amp;apos;tt&amp;apos;,  like: [&amp;apos;apple&amp;apos;, &amp;apos;banana&amp;apos;, &amp;apos;orange&amp;apos;],  sibling: &amp;#123;    age: 25,    name: &amp;apos;tina&amp;apos;  &amp;#125;&amp;#">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-11-17T08:49:57.316Z">
+<meta property="og:updated_time" content="2020-11-18T01:34:57.766Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="gtt blogs" type="application/atom+xml">
@@ -247,7 +247,7 @@
     <h2 id="一、对象冻结"><a href="#一、对象冻结" class="headerlink" title="一、对象冻结"></a>一、对象冻结</h2><p>Object.freeze()</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> objectToFreeze = &#123;</span><br><span class="line">  age: <span class="number">18</span>,</span><br><span class="line">  name: <span class="string">'tt'</span>,</span><br><span class="line">  like: [<span class="string">'apple'</span>, <span class="string">'banana'</span>, <span class="string">'orange'</span>],</span><br><span class="line">  sibling: &#123;</span><br><span class="line">    age: <span class="number">25</span>,</span><br><span class="line">    name: <span class="string">'tina'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">Object</span>.freeze(objectToFreeze)</span><br><span class="line">objectToFreeze.age = <span class="number">19</span> <span class="comment">// age 依旧为18，不会改变</span></span><br><span class="line">objectToFreeze.sibling.age = <span class="number">26</span> <span class="comment">// age 为26，会改变</span></span><br><span class="line"><span class="keyword">delete</span> objectToFreeze.name <span class="comment">// 不会被删除</span></span><br><span class="line"><span class="built_in">console</span>.log(objectToFreeze)   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 1、不能向对象添加新的属性</span></span><br><span class="line"><span class="comment">// 2、如果属性本身不是对象数组，则无法修改（因为sibling的地址并没有改变）</span></span><br><span class="line"><span class="comment">// 3、不能从对象中删除属性</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 解析：这边我们所拥有的只是一个浅渐冻，因为冻结的是直接附加到对象的对象。不关心对象和数组内部的属性。</span></span><br></pre></td></tr></table></figure>
 
-
+<a id="more"></a>
 
 
 
